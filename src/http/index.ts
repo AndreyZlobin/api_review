@@ -16,7 +16,6 @@ class HttpClient extends BaseApi implements ApiClient {
     /**
      * @param {string} path
      * @param {object} params
-     * @return Promise<any>
      * */
     async get<T>(path: string, params?:Params): Promise<SuccessType<T> | ErrorResponse> {
         return await this.provider.get(path, params);

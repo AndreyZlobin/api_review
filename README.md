@@ -1,8 +1,8 @@
 ## More example in main.ts
 
 ```javascript
-import { TEST_ENDPOINTS } from '@/core/api/endpoints';
-import { $http } from '@/core/api/http';
+import { TEST_ENDPOINTS } from '@/endpoints';
+import { $http } from '@/http';
 
 const { getSomeTestEndpoint, removeSomeTestEndpoint, editSomeTestEndpoint } = TEST_ENDPOINTS;
 export async function exempleGetRequest() {
